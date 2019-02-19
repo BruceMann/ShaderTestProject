@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>LoginPage.qml</file>
+        <file>GenieEffect.qml</file>
+        <file>CurtainEffect.qml</file>
+        <file>SimpleShader.qml</file>
+    </qresource>
+</RCC>

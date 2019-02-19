@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/login.png</file>
+        <file>images/lighthouse.jpg</file>
+        <file>images/fabric.jpg</file>
+        <file>images/fabric-4.jpg</file>
+        <file>images/600px-NGC7293_(2004).jpg</file>
+        <file>test.frg</file>
+        <file>normalize.frg</file>
+        <file>colors.frg</file>
+        <file>shape.frg</file>
+        <file>hsb.frg</file>
+        <file>hsb_polar.frg</file>
+        <file>shapes.frg</file>
+        <file>circle.frg</file>
+        <file>distance_field.frg</file>
+        <file>polar_shapes.frg</file>
+        <file>combining_powers.frg</file>
+        <file>translate.frg</file>
+        <file>rotation.frg</file>
+        <file>patterns_1.frg</file>
+        <file>patterns_2.frg</file>
+        <file>patterns_3.frg</file>
+        <file>patterns.frg</file>
+        <file>Shaders/Generative_designs/2d_random.frg</file>
+    </qresource>
+</RCC>
