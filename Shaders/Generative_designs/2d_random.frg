@@ -15,7 +15,7 @@ float random (vec2 st) {
 void main() {
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
 
-    st*=10;
+    st*=10.0;
 
     vec2 ipos = floor(st);
     vec2 fpos = floor(st);

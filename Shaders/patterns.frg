@@ -7,6 +7,12 @@ precision mediump float;
 uniform vec2 u_resolution;
 uniform float u_time;
 
+float random (in vec2 _st) {
+    return fract(sin(dot(_st.xy,
+                         vec2(12.9898,78.233)))*
+        43758.5453123);
+}
+
 vec2 rotate2D (vec2 _st, float _angle) {
     _st -= 0.5;
     _st =  mat2(cos(_angle),-sin(_angle),
@@ -18,6 +24,32 @@ vec2 rotate2D (vec2 _st, float _angle) {
 vec2 tile (vec2 _st, float _zoom) {
     _st *= _zoom;
     return fract(_st);
+}
+
+vec2 rotateTilePatternRandom(vec2 _st){
+    _st *= 2.0;
+
+    //  Give each cell an index number
+    //  according to its position
+    float index = 0.0;
+    index += step(1., mod(_st.x,2.0));
+    index += step(1., mod(_st.y,2.0))*2.0;
+    _st = fract(_st);
+
+    // Rotate each cell according to the index
+    if(index >= 3.0){
+        //  Rotate cell 1 by 90 degrees
+        _st = rotate2D(_st,PI*0.5);
+    } else if(index >= 2.0){
+        //  Rotate cell 2 by -90 degrees
+        _st = rotate2D(_st,PI*-0.5);
+    } else if(index >= 1.0){
+        //  Rotate cell 3 by 180 degrees
+        _st = rotate2D(_st,PI);
+    }
+
+    return _st;
+
 }
 
 vec2 rotateTilePattern(vec2 _st){
@@ -61,13 +93,14 @@ void main (void) {
     vec2 st = gl_FragCoord.xy/u_resolution.xy;
 
     st = tile(st,3.0);
-    st = rotateTilePattern(st);
+    //st = rotateTilePattern(st);
+   st = rotateTilePatternRandom(st);
 
     // Make more interesting combinations
-    st = tile(st,2.0);
-    st = rotate2D(st,-PI*u_time*0.25);
-    st = rotateTilePattern(st*2.);
-    st = rotate2D(st,PI*u_time*0.25);
+   //st = tile(st,2.0);
+   //st = rotate2D(st,-PI*u_time*0.25);
+   //st = rotateTilePattern(st*2.);
+   //st = rotate2D(st,PI*u_time*0.25);
 
     vec3 color = vec3(st,0.0);
 

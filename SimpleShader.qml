@@ -3,6 +3,7 @@ import QtQuick 2.11
 ShaderEffect {
     property double u_time:0.0
     property point u_resolution
+    property point u_mouse
     property string frg_Shader
 
     Timer{

@@ -23,5 +23,10 @@
         <file>Shaders/shapes.frg</file>
         <file>Shaders/test.frg</file>
         <file>Shaders/translate.frg</file>
+        <file>Shaders/Generative_designs/chaos.frg</file>
+        <file>Shaders/Generative_designs/maze.frg</file>
+        <file>Shaders/Noise/noise.frg</file>
+        <file>Shaders/Noise/lava_lamp.frg</file>
+        <file>Shaders/Noise/cellularNoise.frg</file>
     </qresource>
 </RCC>

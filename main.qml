@@ -17,7 +17,17 @@ Window {
         width: parent.width
         height: parent.height
         u_resolution: Qt.point(width,height)
-        frg_Shader: "qrc:/Shaders/Generative_designs/2d_random.frg"
+        frg_Shader: "qrc:/Shaders/Noise/cellularNoise.frg"
+
+        MouseArea{
+            anchors.fill: parent
+            hoverEnabled: true
+            onPositionChanged:{
+//                console.log(mouseX,mouseY)
+                spShader_1.u_mouse = Qt.point(mouseX,rootWindow.height - mouseY)
+
+            }
+        }
     }
 
 //    SimpleShader{
