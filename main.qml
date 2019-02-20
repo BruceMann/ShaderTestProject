@@ -17,7 +17,7 @@ Window {
         width: parent.width
         height: parent.height
         u_resolution: Qt.point(width,height)
-        frg_Shader: "qrc:/Shaders/Noise/cellularNoise.frg"
+        frg_Shader: "qrc:/Shaders/Noise/tiling_iteration_1.frg"
 
         MouseArea{
             anchors.fill: parent

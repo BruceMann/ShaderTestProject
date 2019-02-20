@@ -28,5 +28,7 @@
         <file>Shaders/Noise/noise.frg</file>
         <file>Shaders/Noise/lava_lamp.frg</file>
         <file>Shaders/Noise/cellularNoise.frg</file>
+        <file>Shaders/Noise/tiling_iteration.frg</file>
+        <file>Shaders/Noise/tiling_iteration_1.frg</file>
     </qresource>
 </RCC>
