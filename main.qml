@@ -5,8 +5,8 @@ import QtQuick.Layouts 1.11
 Window {
     id:rootWindow
     visible: true
-    width: 600
-    height: 600
+    width: 300
+    height: 300
     color:"#1e1e1e"
 
     SimpleShader{
