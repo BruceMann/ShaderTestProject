@@ -5,8 +5,8 @@ import QtQuick.Layouts 1.11
 Window {
     id:rootWindow
     visible: true
-    width: 300
-    height: 300
+    width: 500
+    height: 500
     color:"#1e1e1e"
 
     SimpleShader{
@@ -17,7 +17,7 @@ Window {
         width: parent.width
         height: parent.height
         u_resolution: Qt.point(width,height)
-        frg_Shader: "qrc:/Shaders/Noise/tiling_iteration_1.frg"
+        frg_Shader: "qrc:/Shaders/Noise/voronoi_algorithm_1.frg"
 
         MouseArea{
             anchors.fill: parent

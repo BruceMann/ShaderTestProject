@@ -57,10 +57,12 @@ void main(){
     }
 
     //Assign a color using the closest point position
-    //color+=dot(m_point,vec2(.3,.6));
+    color+=dot(m_point,vec2(.3,.6));
+
+    color.g+=m_point.x;
 
     //draw the distance
-    color += m_dist;
+    //color += m_dist;
 
     //Show isolines
     //color -= abs(sin(40.0*m_dist))*0.07;
@@ -72,7 +74,7 @@ void main(){
     //color.r +=step(.98,f_pos.x)+step(.98,f_pos.y);
 
     //draw the ball
-    color = vec3(.9 - color*2.0)*vec3(255,193,193)/vec3(255);
+    //color = vec3(.9 - color*2.0)*vec3(255,193,193)/vec3(255);
 
     gl_FragColor = vec4(color,1.0);
 
