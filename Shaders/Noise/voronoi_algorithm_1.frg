@@ -14,7 +14,7 @@ void main(){
 
     vec3 color = vec3(.0);
 
-    st*=8.0;
+    st*=5.0;
 
     vec2 i_pos = floor(st);
     vec2 f_pos = fract(st);
@@ -49,17 +49,20 @@ void main(){
 
             //Keep the close distance
             //m_dist = min(dist,m_dist);
-            if(dist<m_dist){
-                m_dist = dist;
-                m_point = point;
-            }
+            //if(dist<m_dist){
+              //  m_dist = dist;
+             //   m_point = point;
+            //}
+
+            // Metaball it!
+            m_dist = min(m_dist, m_dist*dist);
         }
     }
 
     //Assign a color using the closest point position
-    color+=dot(m_point,vec2(.3,.6));
+    //color+=dot(m_point,vec2(.3,.6));
 
-    color.g+=m_point.x;
+    //color.g+=m_point.x;
 
     //draw the distance
     //color += m_dist;
@@ -75,6 +78,9 @@ void main(){
 
     //draw the ball
     //color = vec3(.9 - color*2.0)*vec3(255,193,193)/vec3(255);
+
+    //draw cells
+    color += step(0.060,m_dist);
 
     gl_FragColor = vec4(color,1.0);
 
