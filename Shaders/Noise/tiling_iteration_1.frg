@@ -61,7 +61,7 @@ void main(){
     //color.r +=step(.98,f_pos.x)+step(.98,f_pos.y);
 
     //draw the ball
-    color = vec3(.95 - color*2.0)*vec3(255,193,193)/vec3(255);
+    color = vec3(.9 - color*2.0)*vec3(255,193,193)/vec3(255);
 
     gl_FragColor = vec4(color,1.0);
 
