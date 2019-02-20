@@ -4,7 +4,7 @@ practice using shaders(GLSL) in Qt
 a beginner to learn shader;
 All code from "The book of Shaders";
 
-//2019.2.20
+//2019.2.20 /n
 file: tiling_iteration_1.frg   
 effect: Draw some floating balls
 
