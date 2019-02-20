@@ -3,6 +3,7 @@ practice using shaders(GLSL) in Qt
 
 a beginner to learn shader;
 All code from "The book of Shaders";
+https://thebookofshaders.com/
 
 date:2019.2.20   
 file: tiling_iteration_1.frg   

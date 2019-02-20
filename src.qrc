@@ -32,5 +32,6 @@
         <file>Shaders/Noise/tiling_iteration_1.frg</file>
         <file>Shaders/Noise/voronoi_algorithm.frg</file>
         <file>Shaders/Noise/voronoi_algorithm_1.frg</file>
+        <file>Shaders/Noise/voronoi_algorithm_2.frg</file>
     </qresource>
 </RCC>
