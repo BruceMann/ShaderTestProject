@@ -35,5 +35,8 @@
         <file>Shaders/Noise/voronoi_algorithm_2.frg</file>
         <file>Shaders/Fractal_Brownian_Motion/fbm.frg</file>
         <file>Shaders/Fractal_Brownian_Motion/clouds_like.frg</file>
+        <file>images/tulip.jpg</file>
+        <file>Shaders/OriginalShaders/fragment_shader.frg</file>
+        <file>Shaders/OriginalShaders/vertex_shader.vtx</file>
     </qresource>
 </RCC>

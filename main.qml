@@ -9,6 +9,11 @@ Window {
     height: 500
     color:"#1e1e1e"
 
+//    ShaderElements{
+//        z:10
+//        anchors.centerIn: parent
+//    }
+
     SimpleShader{
         id:spShader_1
         x:0
