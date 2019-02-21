@@ -17,7 +17,7 @@ Window {
         width: parent.width
         height: parent.height
         u_resolution: Qt.point(width,height)
-        frg_Shader: "qrc:/Shaders/Noise/voronoi_algorithm_2.frg"
+        frg_Shader: "qrc:/Shaders/Fractal_Brownian_Motion/clouds_like.frg"
 
         MouseArea{
             anchors.fill: parent
