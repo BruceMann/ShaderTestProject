@@ -21,7 +21,7 @@ Rectangle {
             id: effect2
             width: 80; height: width
             // the source where the effect shall be applied to
-            property variant source: sourceImage
+            //property variant source: sourceImage
             // default vertex shader code
             vertexShader: "qrc:/Shaders/OriginalShaders/vertex_shader.vtx"
             // default fragment shader code
